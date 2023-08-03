@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, dl, dt, dd,
+ol, ul, li, form, table, caption, tr, th, td, article, aside, footer, header {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+div {
+  display: inline-block;
+}
+
+.block {
+  width: 200px;
+  height: 200px;
+  background-color: #ccc;
+  margin-right: 50px;
+}
+
+.transform {
+  width: 200px;
+  height: 200px;
+  background-color: #ccc;
+
+  /* transform: rotate(50deg); */
+  /* transform: scale(0.5, 2); */
+  /* transform: skew(0, 20deg); */
+
+  /* transform: translate(30px, 30px); */
+
+
+}
+
+.parrent {
+  width: 600px;
+  height: 600px;
+  background-color: #ccc;
+  position: relative;
+
+  margin: 100px;
+}
+
+.child {
+  width: 100px;
+  height: 100px;
+  background-color: #bbb;
+  border: 1px solid #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.transition {
+  width: 200px;
+  height: 200px;
+  background-color: #000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #fff;
+}
+
+.transition:hover {
+  background-color: coral;
+  color: blueviolet;
+}
+
+@keyframes banner {
+  0% {
+    background-color: red;
+  }
+  50% {
+     background-color: blue;
+  }
+  100% {
+    background-color: black;
+  }
+}
+
+.animation {
+  width: 200px;
+  height: 200px;
+}
+
+.animation:hover {
+  animation: banner 3s ease infinite;
+}
